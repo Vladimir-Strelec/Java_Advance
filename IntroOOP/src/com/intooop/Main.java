@@ -1,13 +1,22 @@
 package com.intooop;
 
+import com.figures.Figure;
+import com.figures.Square;
+import com.figures.Triangle;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         startClasses();
 
     }
     public static void startClasses() {
-        Animal animal = new Animal("Lol");
-        System.out.println(animal.name);
+        Figure figure = new Figure(3, 3);
+        System.out.println(figure.getSideSize() + " " + figure.getSideNumber());
+
+        Triangle triangle = new Triangle(3);
+        System.out.println(triangle.getSideNumber()+" "+triangle.getSideSize());
+
+        Square square = new Square(665);
+        System.out.println(square.getSideNumber()+" "+square.getSideSize());
     }
 }

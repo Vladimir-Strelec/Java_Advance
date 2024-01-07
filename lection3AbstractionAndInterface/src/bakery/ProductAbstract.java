@@ -7,7 +7,7 @@ public abstract class ProductAbstract {
     private String flour;
     private String salt;
     private String garlic;
-    private LinkedHashMap<String, LinkedList<String>> productsMap;
+    private LinkedHashMap<String, LinkedList<String>> ingredients;
 
     public ProductAbstract(String flour, String salt) {
         this.flour = flour;
@@ -21,14 +21,15 @@ public abstract class ProductAbstract {
     }
 
     public void addMap(String key, LinkedList<String> value) {
-        this.productsMap.put(key, value);
+        this.ingredients.put(key, value);
     }
     public LinkedHashMap<String, LinkedList<String>> getProductsMap() {
-        return productsMap;
+
+        return ingredients;
     }
 
     public void setProductsMap(LinkedHashMap<String, LinkedList<String>> productsMap) {
-        this.productsMap = productsMap;
+        this.ingredients = productsMap;
     }
 
     public String getFlour() {

@@ -1,8 +1,10 @@
 package bakery;
 
+import java.lang.invoke.TypeDescriptor;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 
 public interface InterfaceBakery {
-    ProductAbstract createProduct();
-    ProductAbstract createProductWithGarlic();
+    void createProduct(Class clazz);
+
 }

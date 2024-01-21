@@ -16,7 +16,7 @@ public class MainBakery {
         map.put(Bread.class, bread);
         InterfaceBakery interfaceBakery = new InterfaceBakeryImpl();
 
+        Object getObj = interfaceBakery.createProduct(map);
 
-        interfaceBakery.createProduct(map);
     }
 }

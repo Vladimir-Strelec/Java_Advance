@@ -14,5 +14,23 @@ public class Bread extends ProductAbstract{
         this.gluten = gluten;
 
     }
+    public String printInfo() {
+        return this.getFlour() +" "+this.getSalt()+" "+this.oil+" "+this.gluten;
+    }
 
+    public String getOil() {
+        return oil;
+    }
+
+    public void setOil(String oil) {
+        this.oil = oil;
+    }
+
+    public String getGluten() {
+        return gluten;
+    }
+
+    public void setGluten(String gluten) {
+        this.gluten = gluten;
+    }
 }

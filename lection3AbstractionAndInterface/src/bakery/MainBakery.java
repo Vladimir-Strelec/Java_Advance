@@ -12,11 +12,12 @@ public class MainBakery {
         bread.add("Oil");
         bread.add("Gluten");
 
+
         LinkedHashMap<Class, LinkedList<String>> map = new LinkedHashMap<>();
         map.put(Bread.class, bread);
         InterfaceBakery interfaceBakery = new InterfaceBakeryImpl();
 
-        Object getObj = interfaceBakery.createProduct(map);
-
+        Object o = interfaceBakery.createProduct(map);
+        System.out.println(o);
     }
 }

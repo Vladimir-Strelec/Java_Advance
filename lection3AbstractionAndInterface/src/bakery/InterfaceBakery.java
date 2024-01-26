@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Objects;
 
 public interface InterfaceBakery {
-    void createProduct(LinkedHashMap<Class, LinkedList<String>> map);
+    Object createProduct(LinkedHashMap<Class, LinkedList<String>> map);
 
     void info(Class info);
 
